@@ -1,0 +1,10 @@
+[package]
+name = "dns-watchdog"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = {version="4.5.47", features = ["env"]}
+cloudflare = {version="0.14.0", features = ["blocking"]}
+reqwest = {version="0.12.23", features = ["json", "blocking", "native-tls"]}
+tokio = {version="1.47.1", features = ["full"]}
